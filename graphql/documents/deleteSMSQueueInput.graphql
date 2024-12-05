@@ -1,0 +1,8 @@
+mutation DeleteSMSQueue($input: DeleteSMSQueueInput!) {
+    deleteSMSQueue(input: $input) {
+        id
+        body
+        des
+        created_at
+    }
+}

@@ -1,0 +1,8 @@
+mutation CreateSMSQueue($input: CreateSMSQueueInput!) {
+    createSMSQueue(input: $input) {
+        id
+        body
+        des
+        created_at
+    }
+}

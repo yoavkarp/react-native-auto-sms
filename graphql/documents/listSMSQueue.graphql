@@ -1,0 +1,11 @@
+query ListSMSQueues($filter: TableSMSQueueFilterInput, $limit: Int, $nextToken: String) {
+  listSMSQueues(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      created_at
+      body
+      des
+    }
+    nextToken
+  }
+}
